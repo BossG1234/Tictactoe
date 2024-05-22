@@ -1,4 +1,4 @@
-import javax.swing.*;
+mport javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -108,11 +108,12 @@ public class Graphics extends JPanel implements ActionListener {
     }
 
     protected void setWinner(int posA, int posB, int posC) {
-        tiles[posA].setBackground(Color.GREEN);
-        tiles[posB].setBackground(Color.GREEN);
-        tiles[posC].setBackground(Color.GREEN);
+        tiles[posA].setBackground(Color.YELLOW);
+        tiles[posB].setBackground(Color.ORANGE);
+        tiles[posC].setBackground(Color.YELLOW);
 
         Arrays.stream(tiles).forEach(t -> t.setEnabled(false));
+
     }
 
 }
